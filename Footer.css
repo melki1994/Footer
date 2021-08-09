@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css');
+@import url('https://use.fontawesome.com/releases/v5.15.1/css/all.css');
+* {
+    font-family: "RocknRoll One", sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .contact {
+    background: #114358;
+    text-align: center;
+    padding: 5% 25%;
+  }
+  
+  .contact h1 {
+    color: #f9f9f9;
+  }
+  
+  .contact p {
+    color: #f1ece7;
+    font-size: 16px;
+    padding: 20px 0px;
+  }
+  
+  .info button {
+    border: none;
+    background: #f2aa1f;
+    width: 30%;
+    height: 40px;
+    border-radius: 12px;
+    color: #090909;
+    font-size: 15px;
+    min-width: 190px;
+    outline: none;
+  }
+  
+  .info button p {
+    background: #000;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    transform: translate(20px) translateY(0px);
+    border-radius: 50%;
+    padding: 0px;
+  }
+  
+  .info button:hover > p {
+    animation-name: bolita;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    background: #114358;
+  }
+  
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: #f2aa1f;
+    height: 250px;
+  }
+  
+  /*s'abonner*/
+  
+  .sabonner {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  
+  .sabonner h2 {
+    color: #090909;
+  }
+  
+  .sabonner input {
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    margin: 12px 0px 4px 0px;
+    width: 200px;
+    height: 20px;
+    padding-left: 5px;
+    border-left: #114358 2px solid;
+  }
+  
+  .sabonner input::placeholder {
+    color: #bbb;
+  }
+  
+  .sabonner button {
+    border: none;
+    background: #114358;
+    height: 30px;
+    border-radius: 12px;
+    color: #bbb;
+    font-size: 15px;
+    min-width: 100%;
+    outline: none;
+  }
+  
+  .sabonner button p {
+    background: #000;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    transform: translate(20px) translateY(0px);
+    border-radius: 50%;
+    padding: 0px;
+  }
+  
+  .sabonner button:hover > p {
+    animation-name: bola;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    background: #f2aa1f;
+  }
+  
+  /*adresse*/
+  
+  .adresse {
+    width: 280px;
+    color: #090909;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .adresse h2 {
+    margin-bottom: 10px;
+  }
+  
+  .adresse img {
+    max-width: 27px;
+    padding-left: 7px;
+    border-left: #114358 solid 2px;
+  }
+  
+  
+  
+  /* Réseaux et droits*/
+  
+  .droits {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+  }
+  
+  .droits img {
+    width: 15px;
+  }
+  
+  .droits p {
+    align-self: center;
+  }
+  
+  .réseaux {
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+    align-self: center;
+  }
+  
+  .réseaux img {
+    width: 20px;
+  }
+  
+  /* animations */
+  
+  @keyframes bolita {
+    0% {
+      opacity: 1;
+      transform: translate(20px) translateY(0px);
+    }
+  
+    30% {
+      opacity: 1;
+      transform: translate(20px) translateY(-15px);
+    }
+  
+    95% {
+      transform: translate(20px) translateY(10px);
+    }
+  
+    100% {
+      transform: translate(20px) translateY(0px);
+    }
+  }
+  
+  @keyframes bola {
+    0% {
+      opacity: 1;
+      transform: translate(20px) translateY(0px);
+    }
+  
+    30% {
+      opacity: 1;
+      transform: translate(20px) translateY(-9px);
+    }
+  
+    95% {
+      transform: translate(20px) translateY(7px);
+    }
+  
+    100% {
+      transform: translate(20px) translateY(0px);
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .sabonner h2 {
+      font-size: 20px;
+    }
+  
+    .sabonner input {
+      min-width: 140px;
+      width: 18vw;
+    }
+  
+    .sabonner input::placeholder {
+      color: #bbb;
+    }
+  
+    /*adresse*/
+  
+    .adresse {
+      width: 220px;
+      color: #090909;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 13.5px;
+    }
+  
+    .adresse h2 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+  
+    .adresse img {
+      max-width: 20px;
+      padding-left: 4px;
+      border-left: #114358 solid 2px;
+    }
+  
+  }
+  
+  @media screen and (max-width: 600px) {
+    .contact {
+      background: #114358;
+      text-align: center;
+      padding: 5% 12%;
+    }
+  
+    .contact h1 {
+      color: #f9f9f9;
+      font-size: 28px;
+    }
+  
+    .contact p {
+      color: #f1ece7;
+      font-size: 15px;
+      padding: 20px 0px;
+    }
+  
+    .info button {
+      margin-bottom: 30px;
+    }
+  
+    .footer {
+      flex-direction: column;
+      height: 100%;
+      padding: 20px 10px;
+    }
+  
+    /*sabonner*/
+    .sabonner {
+      width: 230px;
+      text-align: center;
+    }
+  
+    .sabonner h2 {
+      color: #090909;
+    }
+  
+    .sabonner input {
+      align-self: center;
+  
+      width: 200px;
+    }
+  
+    .sabonner button {
+      border: none;
+      background: #114358;
+      height: 30px;
+      border-radius: 12px;
+      color: #bbb;
+      font-size: 15px;
+      min-width: 100%;
+      outline: none;
+    }
+  
+    /*adresse*/
+  
+    .adresse {
+      padding-top: 10px;
+      width: 280px;
+      align-self: center;
+      color: #090909;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .adresse h2 {
+      margin-bottom: 10px;
+    }
+  
+    .adresse p {
+      font-size: 15px;
+    }
+  
+    .adresse img {
+      max-width: 27px;
+      padding-left: 7px;
+      border-left: #114358 solid 2px;
+    }
+  
+
+  
+    /* Réseaux et droits*/
+  
+    .droits {
+      width: 100%;
+      display: flex;
+      padding: 20px 5px;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 100px;
+    }
+  
+    .droits img {
+      width: 15px;
+    }
+  
+    .droits p {
+      align-self: center;
+    }
+  
+    .réseaux {
+      display: flex;
+      width: 200px;
+      justify-content: space-around;
+      align-self: center;
+    }
+  
+    .réseaux img {
+      width: 20px;
+    }
+  }
+  
